@@ -15,7 +15,7 @@ fi
 if [ $# -eq 1 ]
 then
   ENV_TYPE=$1
-  if [ -d $ENV_TYPE ]
+  if [ -d server_env/$ENV_TYPE ]
   then
     rm -f server_env/active
     ln -s $ENV_TYPE server_env/active
